@@ -1,0 +1,223 @@
+/* common shared styles */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: "Mulish", sans-serif;
+
+}
+
+/* header section */
+header {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* nav styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .left {
+    display: flex;
+}
+
+nav img {
+    position: relative;
+    width: 45px;
+    height: 46px;
+    top: 35px;
+}
+
+nav h3 {
+    margin-left: 25px;
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: rgb(19, 19, 24);
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(66, 66, 71);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+nav ul .home {
+    color: rgb(255, 84, 0);
+    font-weight: 700;
+}
+
+nav .left .travel {
+    color: rgb(255, 84, 0);
+    font-weight: 800;
+}
+
+/* nav menu styles */
+.checkbtn {
+    font-size: 2rem;
+    color: rgb(19, 19, 24);
+    float: right;
+    line-height: 110px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* banner styles */
+.banner {
+    width: 1170px;
+    height: 500px;
+    background-image: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.banner-container {
+    /* width: 800px;
+    height: 288px; */
+    margin: 106px 185px;
+    justify-content: center;
+}
+
+.banner h3 {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 106px;
+    margin-bottom: 24px;
+}
+
+.banner p {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 48px;
+
+
+}
+
+.banner-btn {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 15px;
+    margin-top: 0px;
+
+
+}
+.banner-btn .when{
+    color: rgba(19, 19, 24, 0.5);
+    padding: 16px 110px 16px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgb(255, 255, 255);
+    border: none;
+    text-align: center;
+}
+
+
+.banner-btn .btn {
+    color: rgba(19, 19, 24, 0.5);
+    padding: 16px 84px 16px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgb(255, 255, 255);
+    border: none;
+    text-align: center;
+}
+
+.banner-btn .find-now {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    background: rgb(255, 84, 0);
+    padding: 16px 84px 16px 16px;
+    border: none;
+    text-align: center;
+}
+
+
+
+
+/* responsiveness for mobile device */
+@media screen and (max-width:576px) {
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nav {
+        align-items: center;
+    }
+
+    nav .right {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+        font-size: 1.4rem;
+        margin-right: 15px;
+        margin-top: -19px;
+    }
+
+    nav h3 {
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+
+    nav img {
+        width: 30px;
+        height: 28px;
+        margin-top: -10px;
+
+    }
+    .banner{
+       width: 100%;
+    }
+    .banner-btn{
+        flex-direction: column;
+        margin: 2px auto;
+      
+    }
+    .banner-container{
+        width: 80%;
+        margin: 2px auto;
+    }
+    .banner h3{
+        font-size: 2rem;
+        padding-top: 32px;
+    }
+    .banner p{
+        font-size: 0.8rem;
+    }
+    .banner-btn .btn .find-now{
+        padding: 16px 60px;
+    }
+
+}
