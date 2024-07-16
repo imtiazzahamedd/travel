@@ -180,45 +180,36 @@ main {
 }
 
 .tour {
-    display: flex;
     margin-top: 100px;
-    justify-content: space-between;
-    gap: 40px;
-
+    display: flex;
+    gap: 50px;
 }
 
-.tour h1{
+.tour .tour-text h3 {
     color: rgb(19, 19, 24);
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 800;
-   
-    
-  
-    
+    margin-top: -2px;
 }
-.tour .description{
+
+.description {
     color: rgba(19, 19, 24, 0.7);
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 40px;
-   
- 
-}
-.tour .description ul li{
-    padding-bottom: 18px;
-    color: rgba(19, 19, 24, 0.7);
-    padding-top: 18px;
-
+    margin-top: 24px;
 }
 
-.tour-img{
-    margin-top: 50px;
+#read-more {
+    margin-top: 40px;
 }
+
 
 
 /* responsiveness for mobile device */
 @media screen and (max-width:576px) {
-    header {
+
+    header,
+    main {
         width: 100%;
         margin: 0 auto;
     }
@@ -268,6 +259,7 @@ main {
     .banner h3 {
         font-size: 2rem;
         padding-top: 32px;
+
     }
 
     .banner p {
@@ -276,6 +268,32 @@ main {
 
     .banner-btn .btn .find-now {
         padding: 16px 60px;
+    }
+
+    .tour {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #read-more{
+        margin-top: 12px;
+        margin-bottom: 2px;
+    }
+
+   .description{
+    margin-top: 12px;
+   }
+
+    .tour h3 {
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+    }
+    .btn-primary{
+        padding: 10px 20px;
+    }
+    .tour img{
+        width: 100%;
+        margin-top: -10px;
     }
 
 }
