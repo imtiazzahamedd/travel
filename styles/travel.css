@@ -203,7 +203,40 @@ main {
     margin-top: 40px;
 }
 
+/* destination section */
+.destination {
+    margin-top: 100px;
+}
 
+.destination h3 {
+    color: rgb(19, 19, 24);
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.destination p {
+    position: relative;
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 48px;
+
+}
+
+.destination img {
+    padding: 4px;
+}
+
+/* .destination-img .img-4 {
+    padding-left: 10px;
+}
+
+.destination-img .img-5 {
+    padding-left: 10px;
+} */
 
 /* responsiveness for mobile device */
 @media screen and (max-width:576px) {
@@ -275,25 +308,59 @@ main {
         width: 100%;
         margin-top: 20px;
     }
-    #read-more{
+
+    .tour img {
+        width: 100%;
+        padding: 0px auto;
+    }
+
+    #read-more {
         margin-top: 12px;
         margin-bottom: 2px;
     }
 
-   .description{
-    margin-top: 12px;
-   }
+    .description {
+        margin-top: 12px;
+    }
 
     .tour h3 {
-        font-size: 1.4rem;
+        font-size: 1rem;
         margin-bottom: 5px;
     }
-    .btn-primary{
+
+    .btn-primary {
         padding: 10px 20px;
     }
-    .tour img{
+
+    .destination {
         width: 100%;
-        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        justify-content: center;
+        margin-top: 10px;
     }
+
+    .destination img {
+        width: 98%;
+        height: 176px; 
+        object-fit: cover;
+        border: 1px solid white;
+        border-radius: 25px;
+
+    }
+
+    .destination h3 {
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+
+    .destinaion p {
+        font-size: 1rem;
+        width: 50%;
+        font-weight: 700;
+    }
+
+
 
 }
