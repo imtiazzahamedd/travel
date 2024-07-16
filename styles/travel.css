@@ -16,6 +16,24 @@
     border: none;
 }
 
+.tittle {
+    color: rgb(19, 19, 24);
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.details {
+    position: relative;
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 48px;
+
+}
+
 /* header section */
 header {
     width: 1170px;
@@ -208,23 +226,6 @@ main {
     margin-top: 100px;
 }
 
-.destination h3 {
-    color: rgb(19, 19, 24);
-    font-size: 2.4rem;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.destination p {
-    position: relative;
-    color: rgba(19, 19, 24, 0.7);
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 48px;
-
-}
 
 .destination img {
     padding: 4px;
@@ -292,9 +293,126 @@ main {
     width: 573px;
     position: relative;
     left: 275px;
+}
 
+/* deal styles */
+.deal{
+    margin-top: 100px;
+}
+.deal #book-now:hover{
+    background-color: #11171a;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+    top: -4px;
+}
+.deal #pckg:hover{
+    background-color: #003011;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    top: -4px;
+}
+
+
+.first-img .img-content {
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    position: relative;
+    bottom: 452px;
+    left: 550px;
+    padding: 50px 77px 50px 50px;
+    margin-bottom: -390px;
+    border: none;
+}
+.first-img .img-content .icons{
+    display: flex;
+    gap: 10px;
+}
+.first-img .icons-caption{
+    color: rgb(90, 90, 93);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.deal-img h3{
+    color: rgb(19, 19, 24);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-top: -1px;
+}
+.deal-img p{
+    color: rgb(90, 90, 93);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: -10px;
+    width: 120%;
+}
+.deal-img .price{
+    color: rgb(255, 84, 0);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+.deal-img #icn{
+    color: rgb(255, 84, 0);
+    margin-right: 7px;
+}
+.second-img .img-content{
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    position: relative;
+    bottom: 452px;
+    left: 40px;
+    padding: 50px 77px 50px 50px;
+    margin-bottom: -390px;
+    border: none;
+}
+.second-img  .img-content .icons{
+    display: flex;
+    gap: 10px;
+}
+.second-img .icons-caption{
+    color: rgb(90, 90, 93);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.third-img .img-content{
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    position: relative;
+    bottom: 452px;
+    left: 550px;
+    padding: 50px 77px 50px 50px;
+    margin-bottom: -390px;
+    border: none;
+}
+.third-img .img-content .icons{
+    display: flex;
+    gap: 10px;
+}
+.third-img .icons-caption{
+    color: rgb(90, 90, 93);
+    font-size: 1rem;
+    font-weight: 400;
+}
+#pckg{
+    margin-top: 50px;
+    position: relative;
+    left: 450px;
     
 }
+
 
 /* responsiveness for mobile device */
 @media screen and (max-width:576px) {
@@ -336,8 +454,7 @@ main {
         width: 100%;
     }
 
-    .banner-btn
-    {
+    .banner-btn {
         flex-direction: column;
         margin: 2px auto;
 
@@ -419,32 +536,96 @@ main {
         width: 50%;
         font-weight: 700;
     }
-    .card-upper{
+
+    .card-upper {
         flex-direction: column;
         width: 100%;
 
     }
-    .card .card-lower{
+
+    .card .card-lower {
         position: relative;
         left: 0px;
         width: 100%;
     }
+
     .card .card-content {
         padding: 20px 10px 10px 10px;
     }
-    .card .card-tittle{
+
+    .card .card-tittle {
         margin-top: -1px;
         font-size: 1.5rem;
     }
-    .card .card-description{
+
+    .card .card-description {
         margin-top: -10px;
         text-align: center;
+        font-size: 1rem;
     }
+
     .card img {
         width: 54px;
         height: 54px;
     }
 
+    .deal img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin-bottom: 140px;
+        
+    }
+    .first-img .img-content{
+        width: 80%;
+        position: relative;
+        left: 10px;
+        padding: 10px;
+    }
+    .second-img .img-content{
+        width: 80%;
+        position: relative;
+        left: 10px;
+        padding: 10px;
+    }
+    .third-img .img-content{
+        width: 80%;
+        position: relative;
+        left: 10px;
+        padding: 10px;
+    }
+    .deal-img h3{
+        font-size: 1.5rem;
+    }
+    .deal-img p{
+        font-size: 0.8rem;
+        width: 103.5%;
+    }
+    .deal-img .price{
+        font-size: 1.2rem;
+    }
+    .deal-img #book-now{
+        font-size: 1rem;
+    }
+    .deal-img #icn{
+        margin-right: 4px;
+        font-size: 1rem;
+    }
+    .deal-img .icons-caption{
+        font-size: 0.9rem;
+        
+    }
+    #pckg{
+        margin-top: 9px;
+        position: relative;
+        left: 90px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        
+    }
+    
 
 
 }
