@@ -414,6 +414,34 @@ main {
 }
 
 
+/* lost styles */
+.lost{
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+}
+.lost h3{
+    color: rgb(19, 19, 24);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    margin-top: -3px;
+}
+.lost p{
+    color: rgb(90, 90, 93);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.lost .lost-li{
+    color: rgb(19, 19, 24);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.lost #see-more{
+    margin-top: 30px;
+}
 /* responsiveness for mobile device */
 @media screen and (max-width:576px) {
 
@@ -479,28 +507,28 @@ main {
         padding: 16px 60px;
     }
 
-    .tour {
+    .tour, .lost {
         flex-direction: column;
         width: 100%;
         margin-top: 20px;
     }
 
-    .tour img {
+    .tour img, .lost img {
         width: 100%;
         padding: 0px auto;
     }
 
-    #read-more {
+    #read-more, #see-more {
         margin-top: 12px;
         margin-bottom: 2px;
     }
 
-    .description {
+    .description, .lost p, .lost-li {
         margin-top: 12px;
     }
 
-    .tour h3 {
-        font-size: 1rem;
+    .tour h3, .lost h3  {
+        font-size: 2rem;
         margin-bottom: 5px;
     }
 
@@ -625,6 +653,14 @@ main {
         font-weight: 600;
         
     }
+    .lost p{
+        font-size: 1rem;
+
+    }
+    .lost .lost-li{
+        font-size: 1rem;
+    }
+    
     
 
 
